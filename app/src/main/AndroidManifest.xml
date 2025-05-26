@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FoodJet"
+        tools:targetApi="31">
+        <activity
+            android:name=".Activity.SellerAddFoodsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.SellerAddShopsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Seller.SellerSettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Seller.SellerProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Seller.SellerMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.RegisterSellerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Customer.CustomerCartListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Customer.CustomerChangeNameActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Customer.CustomerChangeEmailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Customer.CustomerChangeNumberActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Customer.CustomerChangeAddressActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Customer.CustomerMyOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.RegisterCustomerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Customer.CustomerSupportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Customer.CustomerSettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Customer.CustomerProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Seller.SellerFoodsListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Customer.CustomerShowDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Customer.CustomerMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.LoginActivity"
+            android:exported="true"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
